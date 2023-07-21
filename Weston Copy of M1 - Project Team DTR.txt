@@ -1,0 +1,100 @@
+Battleship Project w/ Nurudeen
+Please make a copy to fill out with your partner/team
+
+
+DTR: Define The Relationship
+Your project has the potential to be amazing. The way you set expectations for communication, feedback, and working styles is critical to create an amazing product. We call this process DTR -- Define the Relationship. The more detailed and specific you can be at the start, the better your full instructional team will work together. 
+
+
+Recommended Process
+* DTR with your partner BEFORE you begin work
+* Return to the DTR at the end of your first working session
+* Return to your DTR any time you come into a team conflict
+
+
+BEFORE YOU START THE PROJECT
+DTR: Essential Questions to Discuss 
+* What are your learning goals for the project?
+      * (Will) - Solidify foundational knowledge from weeks 1-3
+      * (Nurudeen) - Improve understanding of OOP
+* What are your strengths and areas of growth?
+   * What do I offer the team?
+      * (Will) - Willing to put in the time and effort 
+      * (Nurudeen) - Commitment
+   * What learning do you want to focus on in the project?
+      * (Will/Nurudeen) - OOP
+   *  How can our team help support one anothers in improving these skills?
+      * Listen, provide value with each other 
+      * Share knowledge 
+* How do you learn best with coding? How do you like to collaborate with others?
+      * (Will) - Going over videos and reading up on + learning theory behind what is happening not just typing lines of code
+      * (Nurudeen) - Hands on work
+   * Do you like to work alone first?
+      * (Will) - Depends on if im learning or actively working on previous concepts
+      * (Nurudeen) - Acquire info about topics and then come together to help and share new knowledge or techniques.
+   * Do you like to speak out loud as you are learning?
+      * Very comfortable with asking questions
+      *    * What do you need (resources, environment, communication) to do your best work?
+
+
+* How do you communicate best?
+   * How do you appreciate receiving communication from others?
+      * (Will) - I enjoy communication
+      * (Nurudeen) - Also comfortable
+   * How do you appreciate receiving feedback from others?
+      * (Will) - I enjoy feedback because it always helps me grow 
+      * (Nurudeen) - 3 : 1
+   * How do you best give feedback to others?
+      * (Will) - “Have you tried this? Maybe consider this?”
+      * (Nurudeen) - Like to be direct with feedback. Very straightforward. 
+* What scheduling restraints do you have?
+   *  What are your scheduling preferences?
+      * (Will) - I prefer morning work as opposed to evening work
+      * (Nurudeen) - Mornings between 9-11am …usually busy with Mentors on Tuesdays @ 10-11 
+* What tools do you want to use to manage the project?
+   * Tracking Github, Slack, making notes on what has been done and what needs to be completed
+* How do you want the group to solve problems when members run into issues with features of the project?
+   * Take a step back and have open communication.
+* When will we check in again about our process and progress?
+* How do you know if a project is successful? 
+   * How can we achieve success as a group?
+      * Did we communicate well together, did we respect each other, did we accommodate the other person. Was there a safe space made to learn effectively 
+   * How can we achieve success as individuals?
+      * (Nurudeen) - Overall mission is to improve his skills. Improve comfortability with writing tests and classes. Developing understanding of relationships between classes, methods and the tests.  
+* Is there anything else we should know about one another before we start working?
+
+
+
+
+
+
+
+
+AFTER FIRST WEEK & ONGOING DURING PROJECT
+DTR: Check In 
+* Essential Questions:
+   * Individual Reflection
+      * Have I been able to uphold the DTR norms we set? 
+      * Are there any new norms or expectations I would like to add?
+      * Do I need to give any feedback or clarify my working relationship with anyone?
+   * Team Discussion:
+      * Have we been able to meet the DTR norms we set?
+      * In what ways are we working well together?
+      * Are there ways we should operate differently in order to be at our best as a team?
+      * What do we commit to changing?
+      * When will we check in again?
+
+
+IF YOU HAVE A CONFLICT
+DTR: Problem Solving
+* Essential Questions:
+   * Individual Reflection
+      * What behaviors/actions are occurring that are causing a challenge?
+      * Why are those behaviors challenging?  
+      * Did we discuss those behaviors in our DTR? 
+      * What language should I use to communicate this challenge?
+   * Team Discussion:
+      * Identify the problem/challenge that needs to be solved
+      * What are the behaviors happening? 
+      * How could we update our DTR to address this? 
+      * What actions can we all take to move forward?
