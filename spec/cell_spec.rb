@@ -29,4 +29,10 @@ RSpec.describe Cell do
 
     expect(@cell.ship).to eq(@cruiser)
   end
+
+  it 'shows empty? cell to be false' do
+    @cell.place_ship(@cruiser)
+
+    expect(@cell.empty?).to eq(false)
+  end
 end
