@@ -10,4 +10,4 @@ Create an Object-Oriented solution to a problem without being given full specifi
 Work in a pair, using Pull Requests to collaborate
 
 #### Overview
-In this project you’ll use Ruby to build a command line implementation of the classic game Battleship. More detail can be found in the pages below:
+In this project you’ll use Ruby to build a command line implementation of the classic game Battleship. 
