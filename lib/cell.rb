@@ -34,6 +34,10 @@ class Cell
     @render = "S"
    elsif fired_upon? && empty?
     @render = "M" 
+   elsif fired_upon? && !empty? && !@ship.sunk?
+    @render = "H" 
+   elsif fired_upon? && !empty? && @ship.sunk?
+    @render = "X" 
    else 
      @render
    end 

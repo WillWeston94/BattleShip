@@ -70,4 +70,23 @@ RSpec.describe Cell do
 
     expect(@cell_2.render).to eq(".")
   end
+
+
+  it 'user cell shows "S" for ship' do
+    @cell_2.place_ship(@cruiser)
+
+    expect(@cell_2.render(true)).to eq("S")
+
+    @cell_2.fire_upon
+
+    expect(@cell_2.render).to eq("H")
+    expect(@cruiser.sunk?).to eq(false)
+
+    @cruiser.hit
+    @cruiser.hit
+
+    expect(@cruiser.sunk?).to eq(true)
+    expect(@cell_2.render).to eq("X")
+
+  end
 end
