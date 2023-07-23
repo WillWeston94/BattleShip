@@ -16,6 +16,8 @@ RSpec.describe Board do
   it 'generates cells for 4x4 board' do
     # binding.pry
     expect(@board.cells).to include({})
+    expect(@board.cells).to_not include("A6", "D5")
     expect(@board.cells.size).to eq(16)
+
   end
 end
