@@ -14,7 +14,7 @@ class Board
     ("A".."D").each do |letter|
       (1..4).each do |number|
         coordinate = "#{letter}#{number}"
-        cells[coordinate] = Creatable.new
+        cells[coordinate] = Cell.new
       end
     end
     cells
