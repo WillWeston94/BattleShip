@@ -1,26 +1,24 @@
-require './lib/creatable'
-require './lib/cell'
-
 class Board 
-  attr_reader :cells 
+  attr_reader :cells
 
   def initialize
-    @cells = {}
-    creatable
+    @cells = create_cells
   end 
 
-  private 
-    def creatable 
-      ("A".."D").each do |letter|
-        (1..4).each do |number|
-          coordinate="#{letter}#{number}"
-          @cells[coordinate] = Cell.new
-        end
+  def cells
+    @cells
+  end
+
+  def create_cells 
+    cells = {}
+    ("A".."D").each do |letter|
+      (1..4).each do |number|
+        coordinate = "#{letter}#{number}"
+        cells[coordinate] = Creatable.new
       end
     end
-
-  
-  
+    cells
+  end
 end 
 
 

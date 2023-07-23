@@ -1,6 +1,7 @@
 require './lib/board'
 require './lib/ship'
 require './lib/cell'
+require './lib/creatable'
 require 'pry'
 
 RSpec.describe Board do
@@ -13,8 +14,9 @@ RSpec.describe Board do
   end
 
 
-  it 'exists' do
-
-    expect(@board.cells).to eq()
+  it 'generates cells for 4x4 board' do
+    # binding.pry
+    expect(@board.cells).to include({})
+    expect(@board.cells.size).to eq(16)
   end
 end
