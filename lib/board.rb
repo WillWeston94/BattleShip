@@ -24,6 +24,7 @@ class Board
     return false unless ship.length == coordinates.count
     return false unless hor_consecutive?(coordinates) 
     return false unless vert_consecutive?(coordinates) 
+    true
   end 
 
   def hor_consecutive?(coordinates)
