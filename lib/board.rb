@@ -5,10 +5,6 @@ class Board
     @cells = create_cells
   end 
 
-  def cells
-    @cells
-  end
-
   def create_cells 
     cells = {}
     ("A".."D").each do |letter|
