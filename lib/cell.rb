@@ -7,7 +7,6 @@ class Cell
     @ship = nil
     @fired_upon = false
     @render = "."
-
   end
 
   def empty?

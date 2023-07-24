@@ -5,10 +5,6 @@ class Board
     @cells = create_cells
   end 
 
-  def cells
-    @cells
-  end
-
   def create_cells 
     cells = {}
     ("A".."D").each do |letter|
@@ -26,3 +22,4 @@ class Board
 end 
 
 
+letters.uniq.length == 1 && (numbers.each_cons(2).all? {|key, value| value == key + 1} || numbers.each_cons(2).all? {|key, value| value == key - 1 })
