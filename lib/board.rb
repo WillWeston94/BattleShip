@@ -25,8 +25,8 @@ class Board
   end
 
   def valid_placement?(ship, coordinates)
-    return false unless ship.length == coordinates.length
-       
+    return false unless ship.length == coordinates.count
+   
   end 
 end 
 
