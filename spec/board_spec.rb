@@ -17,7 +17,8 @@ RSpec.describe Board do
 
   it 'generates cells for 4x4 board' do
     #binding.pry
-    expect(@board.cells).to include({})
+    expect(@board.cells.values.first).to be_an(Cell)
+    expect(@board.cells).to be_a(Hash)
     expect(@board.cells.size).to eq(16)
   end
 
@@ -36,6 +37,7 @@ RSpec.describe Board do
   end
 
   it 'checks whether coordinates are consecutive' do
+    # binding.pry
     expect(@board.valid_placement?(@cruiser, ["A1", "A2", "A4"])).to eq(false)
     expect(@board.valid_placement?(@submarine, ["A1", "C1"])).to eq(false)
     expect(@board.valid_placement?(@cruiser, ["A3", "A2", "A1"])).to eq(false)
