@@ -22,27 +22,37 @@ class Board
 
   def valid_placement?(ship, coordinates)
     return false unless ship.length == coordinates.count
-    return false unless hor_consecutive?(coordinates) 
-    return false unless vert_consecutive?(coordinates) 
+    return false unless direction_placement?(coordinates)
+    return false unless hor_consecutive?(coordinates) || vert_consecutive?(coordinates)
+    true
   end 
+  
+  def direction_placement?(coordinates)
+    letter = coordinates.map { |coordinate| coordinate[0] }
+    number =  coordinates.map { |coordinate| coordinate[1..-1].to_i }
 
+    letter.uniq.length == 1 || number.uniq.length == 1
+  end 
+  
   def hor_consecutive?(coordinates)
     letter = coordinates.map { |coordinate| coordinate[0] }
     number =  coordinates.map { |coordinate| coordinate[1..-1].to_i }
 
-    hor_consecutive = letter.uniq.length == 1 && number.each_cons(2).all? { |key, value| value == key + 1 || value == key - 1 }
+    letter.uniq.length == 1 && number.each_cons(2).all? { |key, value| (value - key) == 1 }
     # returns false when the placement is NOT consecutive
-    hor_consecutive 
   end
 
   def vert_consecutive?(coordinates)
     letter = coordinates.map { |coordinate| coordinate[0] }
     number =  coordinates.map { |coordinate| coordinate[1..-1].to_i }
 
-    vert_consecutive = number.uniq.length == 1 && letter.each_cons(2).all? { |key, value| value.ord == key.ord + 1 || value.ord == key.ord - 1 }
+    number.uniq.length == 1 && letter.each_cons(2).all? { |key, value| (value.ord - key.ord) == 1 }
     # returns false when the placement is NOT consecutive
-    vert_consecutive 
-  end  
+  end
+
+  def place(ship, coordinates)  
+  
+  end 
+
+
 end 
-
-
