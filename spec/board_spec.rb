@@ -61,6 +61,11 @@ RSpec.describe Board do
     @board.place(@cruiser, ["A1", "A2", "A3"]) 
 
     expect(@cell_1 = @board.cells["A1"]).to eq(@cell_1)
+    expect(@cell_2 = @board.cells["A2"]).to eq(@cell_2)
+    expect(@cell_3 = @board.cells["A3"]).to eq(@cell_3)
     expect(@cell_1.ship).to eq(@cruiser)
+    expect(@cell_2.ship).to eq(@cruiser)
+    expect(@cell_3.ship).to eq(@cruiser)
+    expect(@cell_3.ship == @cell_2.ship).to eq(true)
   end
 end
