@@ -22,13 +22,13 @@ class Cell
   end 
 
   def fire_upon 
-    @fired_upon= true
+    @fired_upon = true
     if !empty? 
       @ship.hit
     end
   end 
 
-  def render(reveal=false)
+  def render(reveal = false)
    if reveal == true && !empty?
     @render = "S"
    elsif fired_upon? && empty?

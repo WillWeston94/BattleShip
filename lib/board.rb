@@ -3,6 +3,8 @@ class Board
 
   def initialize
     @cells = create_cells
+    @letter = ("A".."D").to_a
+    @number = (1..4).to_a
   end 
 
   def create_cells 
@@ -80,7 +82,7 @@ class Board
     @number.each do |number|
       coordinate = letter + number.to_s 
       cell = @cells[coordinate] 
-      row += render(cell, reveal) + " " 
+      row += cell.render(reveal) + " " 
     end
     row
   end
