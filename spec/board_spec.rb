@@ -57,9 +57,10 @@ RSpec.describe Board do
   end 
 
   it 'checks if ship takes up multiple cells' do
-    binding.pry
+    # binding.pry
     @board.place(@cruiser, ["A1", "A2", "A3"]) 
 
-    expect(@cell_1 = @board.cells["A1"]).to eq(@cruiser)
+    expect(@cell_1 = @board.cells["A1"]).to eq(@cell_1)
+    expect(@cell_1.ship).to eq(@cruiser)
   end
 end
