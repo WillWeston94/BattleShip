@@ -16,7 +16,7 @@ RSpec.describe Board do
 
 
   it 'generates cells for 4x4 board' do
-    #binding.pry
+    # binding.pry
     expect(@board.cells.values.first).to be_an(Cell)
     expect(@board.cells).to be_a(Hash)
     expect(@board.cells.size).to eq(16)

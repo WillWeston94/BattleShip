@@ -12,7 +12,7 @@ class Board
     ("A".."D").each do |letter|
       (1..4).each do |number|
         coordinate = "#{letter}#{number}"
-        cells[coordinate] = Cell.new
+        cells[coordinate] = Cell.new(coordinate)
       end
     end
     cells
