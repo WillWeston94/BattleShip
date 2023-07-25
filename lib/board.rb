@@ -50,5 +50,9 @@ class Board
     # returns false when the placement is NOT consecutive
   end
 
-end
+  def place(ship, coordinates)  
+  
+  end 
 
+
+end 
