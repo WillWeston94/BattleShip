@@ -1,5 +1,6 @@
 class Player 
-  attr_reader :ships
+  attr_reader :ships, 
+              :health
   def initialize
     @ships = []
   end
@@ -19,20 +20,25 @@ class Player
     board.cells.keys.each_cons(ship.length) do |keys|
       coordinates << keys
     end
-    column = board.cells.keys.map do |coordinate|
-      coordinate.delete(coordinate[0])
-    end.uniq
-    vertical_cells = column.map do |column|
-      board.cells.keys.select do|coordinate|
-        coordinate.delete(coordinate[0]) == column
-        end
-      end
+
+    column = board.cells.keys.map { |coordinate| coordinate[0] }.uniq
+    vertical_cells = column.map do |col|
+      board.cells.keys.select { |coordinate| coordinate[0] == col }
+    end
+
+    vertical_cells.flatten.each_cons(ship.length) do |vertical|
+      coordinates << vertical
+    end
+
       vertical_cells.flatten.each_cons(ship.length) do |vertical|
         coordinates << vertical
       end
-      valid_coordinates = coordinates.select do |coords|
-        coords.all? { |coordinate| board.cells[coordinate].ship.nil? }
-      end
+
       computer_selects = coordinates.sample
+
+      until board.valid_placement?(ship, computer_selects)
+        computer_selects = coordinates.sample
+      end
+      computer_selects
     end
 end 

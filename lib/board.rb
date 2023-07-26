@@ -57,10 +57,14 @@ class Board
     coordinates.any? { |coordinate| @cells[coordinate].ship != nil }
   end 
 
+  def cell_place(ship, coordinate)
+    @cells[coordinate].place_ship(ship)
+  end
+
   def place(ship, coordinates)  
       if valid_placement?(ship, coordinates)
         coordinates.each do |coordinate|
-          @cells[coordinate].place_ship(ship)
+          cell_place(ship, coordinate)
         end
       end
   end 

@@ -41,5 +41,15 @@ class Cell
      @render
    end 
   end 
-end
 
+  def render_shot
+    render
+    if @render == "M"
+      "shot on #{coordinate} was a miss."
+    elsif @render == "H"
+      "shot on #{coordinate} was a hit."
+    elsif @render == "X"
+      "shot on #{coordinate} sunk a ship."
+    end
+  end
+end

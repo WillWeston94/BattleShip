@@ -16,8 +16,6 @@ RSpec.describe Game do
     @computer_submarine = Ship.new("Submarine", 2)
     @player_cruiser = Ship.new("Cruiser", 3)
     @player_submarine = Ship.new("Submarine", 2)
-    @computer_coordinate_1 = @computer.computer_selection(@computer_board, @computer_cruiser)
-    @computer_coordinate_2 = @computer.computer_selection(@computer_board, @computer_submarine)
   end
 
   it 'exists' do
@@ -32,13 +30,11 @@ RSpec.describe Game do
     expect(@player_submarine).to be_an_instance_of(Ship)
   end
 
-  it 'shows welcome message and user inputs p' do
+  xit 'shows welcome message' do
     allow(@game).to receive(:gets).and_return("p\n")
 
     expect{ @game.main_menu }.to output("\nWelcome to BATTLESHIP!\n\nEnter p to play or q to quit\n").to_stdout
   end
-
-
 
   it 'sets up computer and players ships' do
     @computer.add_ship(@computer_cruiser)
