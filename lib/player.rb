@@ -31,6 +31,5 @@ class Player
         coordinates << vertical
       end
       computer_selects = coordinates.sample
-      computer_selects
     end
 end 

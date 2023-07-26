@@ -41,18 +41,14 @@ RSpec.describe Player do
   it 'randomizes coordinates for computer valid placement of cruiser' do
     @computer.add_ship(@cruiser)
 
-    computer_coordinates = @computer.computer_selection(@computer_board,@cruiser)
-
-    expect(computer_coordinates).to be_an(Array)
-    expect(computer_coordinates.length).to eq(3)
+    expect(@computer.computer_selection(@computer_board,@cruiser)).to be_an(Array)
+    expect(@computer.computer_selection(@computer_board,@cruiser).length).to eq(3)
   end
 
   it 'randomizes coordinates for computer valid placement of submarine' do
     @computer.add_ship(@submarine)
 
-    computer_coordinates = @computer.computer_selection(@computer_board,@submarine)
-
-    expect(computer_coordinates).to be_an(Array)
-    expect(computer_coordinates.length).to eq(2)
+    expect(@computer.computer_selection(@computer_board,@submarine)).to be_an(Array)
+    expect(@computer.computer_selection(@computer_board,@submarine).length).to eq(2)
   end
 end 
