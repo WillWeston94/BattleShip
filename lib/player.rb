@@ -30,6 +30,9 @@ class Player
       vertical_cells.flatten.each_cons(ship.length) do |vertical|
         coordinates << vertical
       end
+      valid_coordinates = coordinates.select do |coords|
+        coords.all? { |coordinate| board.cells[coordinate].ship.nil? }
+      end
       computer_selects = coordinates.sample
     end
 end 

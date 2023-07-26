@@ -26,9 +26,7 @@ class Board
     return false unless ship.length == coordinates.count
     return false unless direction_placement?(coordinates)
     return false unless hor_consecutive?(coordinates) || vert_consecutive?(coordinates)
-      coordinates.each do |coordinate| 
-    return false if @cells[coordinate].ship != nil
-    end
+    return false if overlap?(coordinates)
     true
   end 
   
@@ -56,9 +54,7 @@ class Board
   end
 
   def overlap?(coordinates)
-    coordinates.each do |coordinate| 
-      @cells[coordinate].ship != nil
-    end 
+    coordinates.any? { |coordinate| @cells[coordinate].ship != nil }
   end 
 
   def place(ship, coordinates)  
@@ -72,9 +68,9 @@ class Board
   def render(reveal = false) 
       header = " " + ("1".."4").to_a.join(" ") + " \n" 
       rows = @letter.map do |letter|
-        row(letter, reveal)
+        row(letter, reveal) 
       end
-      header + rows.join(" \n")
+      header + rows.join(" \n").rstrip + " \n"
   end 
 
   def row(letter, reveal)
