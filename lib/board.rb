@@ -26,10 +26,10 @@ class Board
     return false unless ship.length == coordinates.count
     return false unless direction_placement?(coordinates)
     return false unless hor_consecutive?(coordinates) || vert_consecutive?(coordinates)
-    coordinates.each do |coordinate| 
+      coordinates.each do |coordinate| 
     return false if @cells[coordinate].ship != nil
-     end
-     true
+    end
+    true
   end 
   
   def direction_placement?(coordinates)
