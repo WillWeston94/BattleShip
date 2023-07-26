@@ -18,4 +18,11 @@ class Game
        end
     end 
   end 
+
+  def setup
+    @computer
+    @player 
+    @computer_board 
+    @player_board 
+  end 
 end 

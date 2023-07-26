@@ -17,4 +17,10 @@ RSpec.describe Game do
     expect(@game.main_menu).to eq("Welcome to BATTLESHIP
       Enter p to play. Enter q to quit.")
   end
+
+  it 'checks setup' do
+    expect(@game.setup).to eq(" ")
+  end
+
+
 end 
