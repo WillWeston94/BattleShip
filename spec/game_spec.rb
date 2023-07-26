@@ -21,6 +21,4 @@ RSpec.describe Game do
   it 'checks setup' do
     expect(@game.setup).to eq(" ")
   end
-
-
 end 
