@@ -18,7 +18,7 @@ RSpec.describe Game do
     @player_submarine = Ship.new("Submarine", 2)
   end
 
-  it 'exists' do
+  it 'objects exist' do
     expect(@game).to be_an_instance_of(Game)
     expect(@computer).to be_an_instance_of(Player)
     expect(@player).to be_an_instance_of(Player)
@@ -36,7 +36,7 @@ RSpec.describe Game do
     expect{ @game.main_menu }.to output("\nWelcome to BATTLESHIP!\n\nEnter p to play or q to quit\n").to_stdout
   end
 
-  it 'sets up computer and players ships' do
+  it 'adds computer and players ships' do
     @computer.add_ship(@computer_cruiser)
     @computer.add_ship(@computer_submarine)
     @player.add_ship(@player_cruiser)
@@ -46,7 +46,7 @@ RSpec.describe Game do
     expect(@player.ships).to eq([@player_cruiser, @player_submarine])
   end
 
-  it 'computer places ships' do
+  it 'checks if computer is capable of placing ship and returns correct cell format' do
     @computer.add_ship(@computer_cruiser)
     allow(@computer).to receive(:computer_selection).and_return(["A3", "B3", "C3"])   
     # binding.pry

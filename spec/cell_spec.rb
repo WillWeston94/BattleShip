@@ -23,11 +23,11 @@ RSpec.describe Cell do
     expect(@cell.empty?).to eq(true)
   end
 
-  it 'places ship' do
+  it 'places ship(cruiser)' do
     expect(@cell.place_ship(@cruiser)).to eq(@cruiser)
   end
 
-  it 'shows ship' do
+  it 'shows ship(cruiser)' do
     @cell.place_ship(@cruiser)
 
     expect(@cell.ship).to eq(@cruiser)
@@ -39,14 +39,14 @@ RSpec.describe Cell do
     expect(@cell.empty?).to eq(false)
   end
 
-  it 'shows whether cell is fired upon' do
+  it 'shows whether cell is fired upon = false' do
     @cell.place_ship(@cruiser)
 
     expect(@cell.fired_upon?).to eq(false)
   end
 
 
-  it 'shows whether cell is fired upon' do
+  it 'shows whether cell is fired upon = true' do
     @cell.place_ship(@cruiser)
     @cell.fire_upon
 
@@ -55,7 +55,7 @@ RSpec.describe Cell do
 
   end
 
-  it 'cell has not being fired upon' do
+  it 'cell has been fired upon and marks m for miss' do
 
     expect(@cell_1.render).to eq(".")
 
@@ -64,15 +64,14 @@ RSpec.describe Cell do
     expect(@cell_1.render).to eq("M")
   end
 
-  it 'cell has not being fired upon' do
+  it 'cell has not been fired upon shows .' do
 
     @cell_2.place_ship(@cruiser)
 
     expect(@cell_2.render).to eq(".")
   end
 
-
-  it 'user cell shows "S" for ship' do
+  it 'user cell shows "S" for our own ship' do
     @cell_2.place_ship(@cruiser)
 
     expect(@cell_2.render(true)).to eq("S")
@@ -87,6 +86,5 @@ RSpec.describe Cell do
 
     expect(@cruiser.sunk?).to eq(true)
     expect(@cell_2.render).to eq("X")
-
   end
 end
