@@ -20,10 +20,24 @@ For the project eval, you should prepare to speak to the presentation points lis
 Written reflection:
 In your README reflect on the following:
 
-Iteration 3 did not provide an interaction pattern. How did you approach designing this iteration? If you did not get to Iteration 3, reflect on how you think you would’ve approached the design and problem solving process.
+Iteration 3 did not provide an interaction pattern. How did you approach designing this iteration?
+** We approached Iteration 3 similar to an Interaction Pattern. We actually ended up breaking down the paragraphs into their own patterns. For instance when we needed to create the main menu method we knew we could create a test to show the String of Welcome to Battleship and then the next interaction pattern we could look at was the setup method. We followed the paragraphs closely and let them guide us into computer placement and then our placement all while creating tests and code. **
+
+ If you did not get to Iteration 3, reflect on how you think you would’ve approached the design and problem solving process. 
+ ** NA **
+
 If you had one more day to work on this project, what would you work on?
+** If we had one more day to work on the project we would have really liked to try creating the custom ship methods or maybe even a custom board. After trying either of those 2 method creations we definitely would like to clean up some of the code and try refactoring anything possible.**
+
+
 Describe the pairing techniques you used while working on this project.
+** We always worked together through zoom sessions. We would go back and forth to walk each other through what was going on. We felt the driving and navigating techniques really helped us grow as developers. **
+
 Describe how feedback was shared over the course of this project.
+
+** We would text each other or call one another after sessions to go over what we did well or what we could’ve saved time on. We also would talk about a small overview on what needed to be done the next day to stay on track with the due date.**
+
+
 Presentation points:
 [ ] Demonstration of functional completeness
 
