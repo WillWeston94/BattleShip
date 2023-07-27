@@ -37,7 +37,7 @@ Describe how feedback was shared over the course of this project.
 
 ** We would text each other or call one another after sessions to go over what we did well or what we could’ve saved time on. We also would talk about a small overview on what needed to be done the next day to stay on track with the due date.**
 
-
+omm
 Presentation points:
 [ ] Demonstration of functional completeness
 
